@@ -1,0 +1,87 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background: #f2f2f2
+    font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif
+    font-size: 18px
+
+.contenedor
+    width: 400px
+    margin: 40px auto
+    .formulario
+        .contenedor-inputs
+            padding: 20px
+            background: #ffffff
+            border-radius: 6px 6px 0 0
+            input[type='text'],
+            input[type='email']
+                display: block
+                width: 100%
+                margin-bottom: 20px
+                padding: 15px 10px
+                border: none
+                border-bottom: 2px solid rgba(#DB2B39 , .4)
+                font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif
+                font-size: 18px
+                &:focus
+                    border-bottom: 2px solid #DB2B39
+                    outline: 0px
+            input[type='radio']
+                display: none
+                &:checked + .label-radio
+                    background: #DB2B39
+            .sexo
+                display: flex
+                flex-wrap: nowrap
+                justify-content: space-between
+                margin-bottom: 20px
+                .hombre
+                    border-radius: 3px 0 0 3px
+                .mujer
+                    border-radius: 0 3px 3px 0
+            .label-radio
+                background: rgba(#DB2B39 , .4)
+                color: #ffffff
+                padding: 10px
+                text-align: center
+                width: 49.5%
+        .terminos
+            text-align: left
+            color: #424242
+            input[type='checkbox']
+                filter: grayscale(1)
+            a
+                color: #424242
+                text-decoration: none
+            label
+                margin-left: 10px
+        .error
+            display: none
+            margin-top: 20px
+            border-radius: 3px
+            background: #08090A
+            color: #ffffff
+            padding: 15px 10px 15px 40px
+        .btn
+            width: 100% 
+            text-align: center
+            background: #DB2B39
+            border: none
+            color: #ffffff
+            display: block
+            padding: 15px 10px
+            cursor: pointer
+            border-radius: 0 0 6px 6px
+            font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif
+            font-size: 18px
+            &:hover
+                background: #b4232f
+            &:focus
+                outline: 0px
+
+
+            
+

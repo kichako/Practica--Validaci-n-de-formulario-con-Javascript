@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica: Formulario de registro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <form action="" class="formulario" id="formulario" name="formulario">
+            <div class="contenedor-inputs">
+                <input type="text" name="nombre" id="nombre" class="nombre" placeholder="Nombre:">
+                <input type="email" name="email" id="email" class="email" placeholder="Correo Electronico:">
+
+                <div class="sexo">
+                    <input type="radio" name="sexo" id="hombre" value="hombre">
+                    <label for="hombre" class="label-radio hombre">Hombre</label>
+
+                    <input type="radio" name="sexo" id="mujer" value="mujer">
+                    <label for="mujer" class="label-radio mujer">Mujer</label>
+                </div>
+                <div class="terminos">
+                    <input type="checkbox" name="terminos" id="terminos">
+                    <label for="terminos">Acepto <a href="#">Terminos y Condiciones</a></label>
+                </div>
+                <ul class="error" id="error">
+
+                </ul>
+            </div>
+            <input type="submit" class="btn" value="Registrate">
+        </form>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
